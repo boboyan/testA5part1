@@ -12,7 +12,6 @@
             maxlength="280"
             :dense="dense"
             autogrow
-<<<<<<< HEAD
           >
             <template v-slot:before>
               <q-avatar size="">
@@ -22,20 +21,6 @@
           </q-input>
         </div>
         <div class="col col-shrink">
-=======
-            class="new-queet"
-        >
-        <template v-slot:before>
-          <q-avatar size="xl">
-                <img src="https://cdn.quasar.dev/img/avatar5.jpg">
-          </q-avatar>
-        </template>
-
-        </q-input>
-      </div>
-
-      <div class="col col-shrink">
->>>>>>> a917bff40d33251f11914a90a32fec980440b462
           <q-btn
             @click="addNewQweet"
             :disable="!newQweetContent"
@@ -70,7 +55,6 @@
               </q-avatar>
             </q-item-section>
 
-<<<<<<< HEAD
             <q-item-section>
               <q-item-label class="text-subtitle1">
                 <strong>George Royce</strong>
@@ -83,24 +67,6 @@
                   {{qweet.content}}
               </q-item-label>
               <div class="qweet-icons row justify-between q-mt-sm">
-=======
-        <q-item
-          v-for="qweet in qweets"
-          :key="qweet.date"
-          class="q-py-md">
-
-           <q-item-section avatar top>
-            <q-avatar>
-          <img :src="require('../assets/doghead.jpg')">
-            </q-avatar>
-          </q-item-section>
-
-          <q-item-section>
-            <q-item-label><strong> Test User </strong>  </q-item-label>
-             <q-item-label class="qweet-content"> {{ qweet.content}}
-            </q-item-label>
-              <div class="row justify-between q-mt-sm">
->>>>>>> a917bff40d33251f11914a90a32fec980440b462
                 <q-btn
                 flat
                 round
@@ -245,13 +211,10 @@ export default {
   .qweet-content
     white-space: pre-line
 
-<<<<<<< HEAD
   .qweet-icons
     margin-left: -5px
 
   .qweet:not(:first-child)
    border-top: 1px solid rgba(0, 0 , 0, 0.12)
 
-=======
->>>>>>> a917bff40d33251f11914a90a32fec980440b462
 </style>
